@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ColdSectorTest/ColdSectorTest.unity
+    guid: ddb5f4aa39e281440ad7ef7bfde98a64
   m_configObjects: {}
