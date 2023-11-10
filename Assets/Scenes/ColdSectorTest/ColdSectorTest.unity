@@ -883,11 +883,11 @@ MonoBehaviour:
   - {fileID: 1030037058}
   _currWaypoint: 0
   _acceptableRadius: 0.06
-  _loop: 1
-  _sorted: 1
+  _loop: 0
+  _sorted: 0
   _Arrived: 0
   _waiting: 0
-  _waitTimer: 1
+  _waitTime: 0
   _minValue: 1.3503649
   _maxValue: 2.7007298
 --- !u!1 &1628139191
