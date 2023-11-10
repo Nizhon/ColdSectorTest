@@ -876,13 +876,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5aa3e7f6350a44d8ce69c9479a4d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Waypoints:
+  _navAgent: {fileID: 1603213565}
+  _waypoints:
   - {fileID: 706098874}
   - {fileID: 1361297133}
   - {fileID: 1030037058}
-  _currWaypont: 0
-  navAgent: {fileID: 1603213565}
+  _currWaypoint: 0
   _acceptableRadius: 0.06
+  _loop: 1
+  _sorted: 1
+  _Arrived: 0
+  _waiting: 0
+  _waitTimer: 1
+  _minValue: 1.3503649
+  _maxValue: 2.7007298
 --- !u!1 &1628139191
 GameObject:
   m_ObjectHideFlags: 0
