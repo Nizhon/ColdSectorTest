@@ -48,6 +48,8 @@ public class Patrol : MonoBehaviour
         //We increase the time of the _timer untill it's higher then the _waitTime
         if ( _waiting )
         {
+            //We stop moving as we're waiting
+            _navAgent.isStopped = true;
             _timer += Time.deltaTime;
 
             if ( _timer < _waitTime )
@@ -103,6 +105,7 @@ public class Patrol : MonoBehaviour
                 {
                     _Arrived = true;
                     _waiting = false;
+                    _navAgent.isStopped = true;
                     return;
                 }
                 _currWaypoint++;
@@ -113,6 +116,7 @@ public class Patrol : MonoBehaviour
             if( !_waiting )
             {
                 //Moving the AI and making so he rotates in the direction of movement.
+                _navAgent.isStopped = false;
                 _navAgent.SetDestination( wp.position );
                 Quaternion lookRotation = Quaternion.LookRotation( _navAgent.velocity );
                 transform.rotation = Quaternion.RotateTowards( transform.rotation, lookRotation, _navAgent.angularSpeed * Time.deltaTime );
